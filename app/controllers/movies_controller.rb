@@ -15,4 +15,10 @@ class MoviesController < ApplicationController
   # will render app/views/movies/show.html.haml by default
    @movie = Movie.where(:id => params[:id])
   end
+  
+  def new
+  @movie = Movie.new
+  # default: render 'new' template
+  end 
+
 end
