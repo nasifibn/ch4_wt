@@ -62,3 +62,8 @@ form label {
   font-weight: bold;
   color: maroon;
 }
+flash{
+  color: red;
+  text-align: center;
+  background-color: rgba(100, 44, 50, .03);
+}
