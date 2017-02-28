@@ -2,12 +2,6 @@ class MoviesController < ApplicationController
   def index
     @movies = Movie.all
   end
-  
-  private
-
-  def movie_params
-    params.require(:movie).permit(:title, :rating, :description, :release_date)
-  end
 
   def show
   id = params[:id] # retrieve movie ID from URI route
@@ -47,4 +41,10 @@ class MoviesController < ApplicationController
   flash[:notice] = "Movie '#{@movie.title}' deleted."
   redirect_to movies_path
  end
+ 
+ private
+
+  def movie_params
+    params.require(:movie).permit(:title, :rating, :description, :release_date)
+  end
 end
