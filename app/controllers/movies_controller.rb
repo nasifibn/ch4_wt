@@ -4,10 +4,8 @@ class MoviesController < ApplicationController
   end
 
   def show
-  id = params[:id] # retrieve movie ID from URI route
-  @movie = Movie.find(id) # look up movie by unique ID
-  # will render app/views/movies/show.html.haml by default
-   ###@movie = Movie.where(:id => params[:id])
+    id = params[:id] # retrieve movie ID from URI route
+    @movie = Movie.find(id) # look up movie by unique ID
   end
   
   def new
@@ -23,11 +21,11 @@ class MoviesController < ApplicationController
   end
 
  def edit
-  @movie = Movie.find params[:id]
+  @movie = Movie.find(params[:id])
  end
 
   def update
-    @movie = Movie.find params[:id]
+    @movie = Movie.find(params[:id])
     #@movie.update_attributes!(params[:movie])  # old way
     @movie.update_attributes!(movie_params)  # new way  
     flash[:notice] = "#{@movie.title} was successfully updated."

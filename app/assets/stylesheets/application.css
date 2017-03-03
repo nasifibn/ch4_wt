@@ -4,8 +4,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: White;
-  color: DarkSlateGrey;
+  background:  black;
+  color: #A0E6FF;
   font-family: Tahoma, Verdana, sans-serif;
   font-size: 10pt;
 }
@@ -15,55 +15,62 @@ div#main {
 }
 a {
   background: transparent;
-  color: maroon;
+  text-align: center;
+  color: #A0E6FF;
   text-decoration: underline;
   font-weight: bold;
 }
 h1 {
-  color: maroon;
+  color: #A0E6FF;
+  text-align: center;
   font-size: 150%;
   font-style: italic;
   display: block;
   width: 100%;
-  border-bottom: 1px solid DarkSlateGrey;
+  border-bottom: 1px solid gold;
 }
 h1.title {
   margin: 0 0 1em;
   padding: 10px;
-  background-color: orange;
-  color: white;
-  border-bottom: 4px solid gold;
+  background-color: gold;
+  color: black;
+  border-bottom: 4px dotted black;
   font-size: 2em;
   font-style: normal;
 }
 table#movies {
   margin: 10px;
-  border-collapse: collapse;
+  border: 4px dotted gold;
   width: 100%;
-  border-bottom: 2px solid black;
+  border-radius: 25px;
 }
 table#movies th {
-  border: 2px solid white;
+  border: 2px dashed white;
+  text-transform: uppercase;
+  border-radius: 20px;
   font-weight: bold;
-  background-color: wheat;
+  background-color: gold;
+  color: #0066CC;
 }
 table#movies th, table#movies td {
   padding: 4px;
-  text-align: left;
+  text-align: center;
 }
 #notice, #warning {
-  background: rosybrown;
+  background: #2243B6;
   margin: 1em 0;
-  padding: 4px;
+  padding: 4px; 
+  border-radius: 20px;
+  border: 2px dashed #76D7EA;
 }
 form label {
   display: block;
   line-height: 25px;
   font-weight: bold;
-  color: maroon;
+  color: #A0E6FF;
 }
 flash{
-  color: red;
+  color: white;
   text-align: center;
   background-color: rgba(100, 44, 50, .03);
 }

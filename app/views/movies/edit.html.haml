@@ -12,4 +12,4 @@
   = date_select :movie, :release_date
 
   = submit_tag 'Save Changes'
-  
+  = link_to 'Delete', movie_path(@movie), :method => :delete
